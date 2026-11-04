@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brasa & Smash | Hamburgueria Artesanal</title>
+  <meta name="description" content="Hamburgueria artesanal de alta qualidade. Carnes Angus 100% grelhadas na brasa, pães brioche artesanais e molhos especiais. Peça online!" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="hamburgueria.css" />
+</head>
+<body>
+
+  <!-- ==========================================================================
+       Status Bar
+       ========================================================================== -->
+  <div class="status-bar">
+    <div class="container status-bar-content">
+      <div class="status-indicator">
+        <span class="pulse-dot"></span>
+        <span>ABERTO AGORA • Aceitando pedidos para entrega e retirada!</span>
+      </div>
+      <div class="status-info">
+        <span>⏱️ Tempo de entrega: 30 a 45 min</span>
+        <span>🛵 Entrega Grátis acima de R$ 70</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       Header & Navigation
+       ========================================================================== -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo">
+        <div class="logo-icon">🔥</div>
+        <span>BRASA &amp; <span>SMASH</span></span>
+      </a>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#inicio" class="nav-link active">Início</a></li>
+        <li><a href="#lanches" class="nav-link">Nossos Burgers</a></li>
+        <li><a href="#diferenciais" class="nav-link">Por Que Nós?</a></li>
+        <li><a href="#acompanhamentos" class="nav-link">Acompanhamentos</a></li>
+        <li><a href="#depoimentos" class="nav-link">Avaliações</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="cart-btn" id="cart-btn" title="Ver Sacola de Pedidos" aria-label="Sacola de Pedidos">
+          🛒
+          <span class="cart-count" id="cart-badge-count" style="display: none;">0</span>
+        </button>
+
+        <a href="#lanches" class="btn-primary" style="display: inline-flex;">
+          Pedir Agora
+        </a>
+
+        <button class="mobile-toggle" id="mobile-toggle-btn" aria-label="Abrir Menu">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       Hero Section
+       ========================================================================== -->
+  <section class="hero-section" id="inicio">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-tag">
+          <span class="badge badge-fire">🔥 O Autêntico Burger Artesanal</span>
+        </div>
+        <h1 class="hero-title">
+          SUCULÊNCIA MÁXIMA,<br />
+          <span class="text-gradient">SABOR INCOMPARÁVEL.</span>
+        </h1>
+        <p class="hero-description">
+          Blend nobre 100% carne Angus grelhado no fogo forte, queijo derretido de verdade, bacon caramelizado e pão brioche dourado na manteiga de garrafa.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#lanches" class="btn-primary">
+            <span>🍔</span> Ver Cardápio &amp; Pedir
+          </a>
+          <a href="#diferenciais" class="btn-secondary">
+            Conhecer Nossa Produção
+          </a>
+        </div>
+
+        <div class="hero-highlights">
+          <div class="highlight-item">
+            <span class="highlight-number">4.9 ★</span>
+            <span class="highlight-label">+2.500 Avaliações</span>
+          </div>
+          <div class="highlight-item">
+            <span class="highlight-number">100%</span>
+            <span class="highlight-label">Carne Angus Certificada</span>
+          </div>
+          <div class="highlight-item">
+            <span class="highlight-number">35 MIN</span>
+            <span class="highlight-label">Entrega Rápida &amp; Quente</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-media">
+        <div class="hero-image-wrapper">
+          <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1000&q=80" alt="Hambúrguer Artesanal Suculento Brasa e Smash" />
+          
+          <div class="floating-badge floating-badge-top">
+            <div class="badge-icon-box badge-icon-orange">🥩</div>
+            <div>
+              <div class="badge-text-title">Blend Angus 180g</div>
+              <div class="badge-text-sub">Ponto perfeito &amp; suculento</div>
+            </div>
+          </div>
+
+          <div class="floating-badge floating-badge-bottom">
+            <div class="badge-icon-box badge-icon-gold">🧀</div>
+            <div>
+              <div class="badge-text-title">Cheddar Inglês Real</div>
+              <div class="badge-text-sub">Cremoso e maçaricado</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Diferenciais / Features
+       ========================================================================== -->
+  <section class="features-section" id="diferenciais">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🥩</div>
+          <h3 class="feature-title">Blend 100% Angus</h3>
+          <p class="feature-desc">Cortes selecionados de alta nobreza, moídos diariamente para garantir textura e suculência incomparáveis.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🥖</div>
+          <h3 class="feature-title">Pão Brioche Diário</h3>
+          <p class="feature-desc">Fermentação natural lenta, maciez extrema e selado na manteiga para reter cada gota de sabor.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🧀</div>
+          <h3 class="feature-title">Molhos Autorais</h3>
+          <p class="feature-desc">Maionese defumada, barbecue artesanal ao whisky e geleia de bacon criados artesanalmente pelo chef.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🚀</div>
+          <h3 class="feature-title">Embalagem Térmica</h3>
+          <p class="feature-desc">Tecnologia que mantém o burger quentinho e as batatas crocantes do nosso fogo até a sua mesa.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CARDÁPIO: 4 OPÇÕES DE LANCHES (DESTAQUES)
+       ========================================================================== -->
+  <section class="menu-section" id="lanches">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag">Nossos Clássicos &amp; Autorais</span>
+        <h2 class="section-title">ESCOLHA SEU BURGER FAVORITO</h2>
+        <p class="section-subtitle">
+          Criados para proporcionar uma explosão de sabor a cada mordida. Feitos na hora com ingredientes frescos e selecionados.
+        </p>
+      </div>
+
+      <div class="menu-grid">
+        
+        <!-- LANCHE 1 -->
+        <article class="burger-card">
+          <div class="burger-image-box">
+            <span class="badge badge-fire burger-tag-flag">🔥 Mais Vendido</span>
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80" alt="Master Bacon Burger" loading="lazy" />
+            <div class="burger-price-overlay">R$ 36,90</div>
+          </div>
+          <div class="burger-content">
+            <div class="burger-header-row">
+              <h3 class="burger-title">01. Master Bacon Burger</h3>
+              <span class="burger-weight">180g Angus</span>
+            </div>
+            <p class="burger-description">
+              Blend suculento de 180g de carne Angus grelhada no fogo forte, fatias generosas de bacon artesanal crocante com toque de melaço, fatias duplas de queijo cheddar inglês derretido, cebola caramelizada lentamente e nossa maionese defumada no pão brioche amanteigado.
+            </p>
+            <div class="burger-ingredients">
+              <span class="ingredient-pill">Bacon Crocante</span>
+              <span class="ingredient-pill">Cheddar Inglês</span>
+              <span class="ingredient-pill">Cebola Caramelizada</span>
+              <span class="ingredient-pill">Pão Brioche</span>
+            </div>
+            <div class="burger-footer-row">
+              <div class="price-container">
+                <span class="price-label">Preço Unitário</span>
+                <span class="price-value"><span>R$</span> 36,90</span>
+              </div>
+              <button 
+                class="add-to-cart-btn" 
+                onclick="addToCart('burger-1', 'Master Bacon Burger', 36.90, 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80')">
+                <span>+</span> Pedir Este
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- LANCHE 2 -->
+        <article class="burger-card">
+          <div class="burger-image-box">
+            <span class="badge badge-gold burger-tag-flag">⭐ Especial Gourmet</span>
+            <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=800&q=80" alt="Trufado Sublime Burger" loading="lazy" />
+            <div class="burger-price-overlay">R$ 44,90</div>
+          </div>
+          <div class="burger-content">
+            <div class="burger-header-row">
+              <h3 class="burger-title">02. Trufado Sublime</h3>
+              <span class="burger-weight">180g Angus</span>
+            </div>
+            <p class="burger-description">
+              Uma experiência sofisticada: Blend Angus 180g na brasa, generosa fatia de queijo brie maçaricado, cogumelos shimeji frescos salteados na manteiga com ervas finas, folhas crocantes de rúcula hidropônica e maionese trufada exclusiva no macio pão australiano artesanal.
+            </p>
+            <div class="burger-ingredients">
+              <span class="ingredient-pill">Queijo Brie</span>
+              <span class="ingredient-pill">Shimeji na Manteiga</span>
+              <span class="ingredient-pill">Maionese Trufada</span>
+              <span class="ingredient-pill">Pão Australiano</span>
+            </div>
+            <div class="burger-footer-row">
+              <div class="price-container">
+                <span class="price-label">Preço Unitário</span>
+                <span class="price-value"><span>R$</span> 44,90</span>
+              </div>
+              <button 
+                class="add-to-cart-btn" 
+                onclick="addToCart('burger-2', 'Trufado Sublime', 44.90, 'https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=800&q=80')">
+                <span>+</span> Pedir Este
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- LANCHE 3 -->
+        <article class="burger-card">
+          <div class="burger-image-box">
+            <span class="badge badge-fire burger-tag-flag">💥 Super Crocante</span>
+            <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=80" alt="Crispy BBQ & Onion Burger" loading="lazy" />
+            <div class="burger-price-overlay">R$ 39,90</div>
+          </div>
+          <div class="burger-content">
+            <div class="burger-header-row">
+              <h3 class="burger-title">03. Crispy BBQ &amp; Onion</h3>
+              <span class="burger-weight">180g Angus</span>
+            </div>
+            <p class="burger-description">
+              Hambúrguer de 180g grelhado, coberto com anéis de cebola artesanais empanados ultracrocantes (onion rings), queijo gouda derretido, tiras rústicas de bacon defumado na lenha e nosso autêntico molho barbecue artesanal com toque de whisky no pão de gergelim tostado.
+            </p>
+            <div class="burger-ingredients">
+              <span class="ingredient-pill">Onion Rings Crocantes</span>
+              <span class="ingredient-pill">Queijo Gouda</span>
+              <span class="ingredient-pill">Molho BBQ ao Whisky</span>
+              <span class="ingredient-pill">Bacon Rústico</span>
+            </div>
+            <div class="burger-footer-row">
+              <div class="price-container">
+                <span class="price-label">Preço Unitário</span>
+                <span class="price-value"><span>R$</span> 39,90</span>
+              </div>
+              <button 
+                class="add-to-cart-btn" 
+                onclick="addToCart('burger-3', 'Crispy BBQ & Onion', 39.90, 'https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=80')">
+                <span>+</span> Pedir Este
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- LANCHE 4 -->
+        <article class="burger-card">
+          <div class="burger-image-box">
+            <span class="badge badge-gold burger-tag-flag">⚡ Duplo Smash Crocante</span>
+            <img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?auto=format&fit=crop&w=800&q=80" alt="Smash Monster Duplo" loading="lazy" />
+            <div class="burger-price-overlay">R$ 34,90</div>
+          </div>
+          <div class="burger-content">
+            <div class="burger-header-row">
+              <h3 class="burger-title">04. Smash Monster Duplo</h3>
+              <span class="burger-weight">2x 100g Smash</span>
+            </div>
+            <p class="burger-description">
+              Dois smash burgers ultrafinos prensados na chapa de ferro quente para criar a crostinha caramelizada perfeita (reação de Maillard), queijo prato duplo derretido, lâminas de picles crocantes artesanais, alface americana fresca e molho secreto especial no pão brioche dourado.
+            </p>
+            <div class="burger-ingredients">
+              <span class="ingredient-pill">Duplo Smash 200g</span>
+              <span class="ingredient-pill">Queijo Prato Duplo</span>
+              <span class="ingredient-pill">Picles Artesanal</span>
+              <span class="ingredient-pill">Molho Especial</span>
+            </div>
+            <div class="burger-footer-row">
+              <div class="price-container">
+                <span class="price-label">Preço Unitário</span>
+                <span class="price-value"><span>R$</span> 34,90</span>
+              </div>
+              <button 
+                class="add-to-cart-btn" 
+                onclick="addToCart('burger-4', 'Smash Monster Duplo', 34.90, 'https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?auto=format&fit=crop&w=800&q=80')">
+                <span>+</span> Pedir Este
+              </button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Acompanhamentos & Extras
+       ========================================================================== -->
+  <section class="sides-section" id="acompanhamentos">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag">Complete sua Experiência</span>
+        <h2 class="section-title">ACOMPANHAMENTOS &amp; BEBIDAS</h2>
+        <p class="section-subtitle">
+          Deixe seu pedido ainda melhor com as nossas batatas temperadas e sobremesas irresistíveis.
+        </p>
+      </div>
+
+      <div class="sides-grid">
+        <div class="side-card">
+          <img src="https://images.unsplash.com/photo-1576107232684-1279f3908594?auto=format&fit=crop&w=300&q=80" alt="Batata Rústica com Páprica" class="side-img" />
+          <div class="side-info">
+            <h4 class="side-title">Batatas Rústicas com Páprica</h4>
+            <p class="side-desc">Crocantes por fora, macias por dentro, com alecrim e páprica defumada.</p>
+            <div class="side-bottom">
+              <span class="side-price">R$ 16,90</span>
+              <button class="side-add-btn" onclick="addToCart('side-1', 'Batata Rústica com Páprica', 16.90, 'https://images.unsplash.com/photo-1576107232684-1279f3908594?auto=format&fit=crop&w=300&q=80')" title="Adicionar">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="side-card">
+          <img src="https://images.unsplash.com/photo-1639024471287-032f6640dc1f?auto=format&fit=crop&w=300&q=80" alt="Onion Rings Artesanais" class="side-img" />
+          <div class="side-info">
+            <h4 class="side-title">Onion Rings Crocantes</h4>
+            <p class="side-desc">Porção com 8 anéis generosos de cebola empanados com panko e molho rosé.</p>
+            <div class="side-bottom">
+              <span class="side-price">R$ 18,90</span>
+              <button class="side-add-btn" onclick="addToCart('side-2', 'Onion Rings Crocantes', 18.90, 'https://images.unsplash.com/photo-1639024471287-032f6640dc1f?auto=format&fit=crop&w=300&q=80')" title="Adicionar">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="side-card">
+          <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=300&q=80" alt="Milkshake de Nutella com Ninho" class="side-img" />
+          <div class="side-info">
+            <h4 class="side-title">Milkshake Nutella &amp; Ninho</h4>
+            <p class="side-desc">Sorvete artesanal batido com Nutella pura e finalizado com leite Ninho (400ml).</p>
+            <div class="side-bottom">
+              <span class="side-price">R$ 22,90</span>
+              <button class="side-add-btn" onclick="addToCart('side-3', 'Milkshake Nutella & Ninho', 22.90, 'https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=300&q=80')" title="Adicionar">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Depoimentos de Clientes
+       ========================================================================== -->
+  <section class="reviews-section" id="depoimentos">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag">Opinião de Quem Ama Burger</span>
+        <h2 class="section-title">O QUE NOSSOS CLIENTES DIZEM</h2>
+        <p class="section-subtitle">
+          Mais de 2.500 avaliações 5 estrelas no Google e iFood. Confira a experiência da galera!
+        </p>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">
+            "Sem dúvida o melhor burger artesanal da cidade! O Master Bacon tem o ponto perfeito da carne e a maionese defumada é viciante. Chegou super rápido e crocante."
+          </p>
+          <div class="review-author">
+            <div class="review-avatar">RM</div>
+            <div>
+              <div class="review-name">Rodrigo Mendes</div>
+              <div class="review-location">Cliente verificado • São Paulo</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">
+            "O Trufado Sublime é surreal de bom! O queijo brie derretido com o shimeji cria uma combinação divina. Vale cada centavo, virou meu vício de todo final de semana."
+          </p>
+          <div class="review-author">
+            <div class="review-avatar">CL</div>
+            <div>
+              <div class="review-name">Camila Lima</div>
+              <div class="review-location">Cliente verificado • São Paulo</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">
+            "A agilidade na entrega me surpreendeu: pedi pelo WhatsApp e em menos de 30 minutos já estava na minha porta quentinho. O Smash Monster Duplo é imbatível!"
+          </p>
+          <div class="review-author">
+            <div class="review-avatar">FA</div>
+            <div>
+              <div class="review-name">Felipe Albuquerque</div>
+              <div class="review-location">Cliente verificado • São Paulo</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       WhatsApp CTA Banner
+       ========================================================================== -->
+  <section class="container">
+    <div class="cta-banner">
+      <div class="cta-banner-content">
+        <span class="badge badge-fire" style="margin-bottom: 16px;">🔥 Fome de Burger de Verdade?</span>
+        <h2 class="cta-banner-title">PEÇA AGORA DIRETO PELO WHATSAPP!</h2>
+        <p class="cta-banner-desc">
+          Atendimento rápido, cupons exclusivos e entrega expressa para a sua casa. Não perca tempo na cozinha hoje!
+        </p>
+        <a href="https://api.whatsapp.com/send?phone=5511999998888&text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20pedido%20na%20Brasa%20%26%20Smash!" target="_blank" rel="noopener noreferrer" class="cta-btn-whatsapp">
+          <span>💬</span> Chamar no WhatsApp &amp; Pedir
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Footer
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="brand-logo">
+            <div class="logo-icon">🔥</div>
+            <span>BRASA &amp; <span>SMASH</span></span>
+          </a>
+          <p>
+            Hamburgueria artesanal apaixonada por fogo, brasa e ingredientes de alta qualidade. Elevando o conceito de hambúrguer a outro nível.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-icon" title="Instagram">📸</a>
+            <a href="#" class="social-icon" title="Facebook">📘</a>
+            <a href="#" class="social-icon" title="TikTok">🎵</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Cardápio</h4>
+          <ul class="footer-links">
+            <li><a href="#lanches">Master Bacon Burger</a></li>
+            <li><a href="#lanches">Trufado Sublime</a></li>
+            <li><a href="#lanches">Crispy BBQ &amp; Onion</a></li>
+            <li><a href="#lanches">Smash Monster Duplo</a></li>
+            <li><a href="#acompanhamentos">Batatas e Porções</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Horários</h4>
+          <div class="footer-info-item">
+            <span>📅</span>
+            <div>
+              <strong>Terça a Domingo:</strong><br />
+              18h00 às 23h45
+            </div>
+          </div>
+          <div class="footer-info-item">
+            <span>⛔</span>
+            <div>
+              <strong>Segunda-feira:</strong><br />
+              Fechado para descanso da equipe
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Onde Estamos</h4>
+          <div class="footer-info-item">
+            <span>📍</span>
+            <div>Rua dos Burgers Artesanais, 742 - Jardins, São Paulo - SP</div>
+          </div>
+          <div class="footer-info-item">
+            <span>💳</span>
+            <div>Aceitamos Pix, Cartões de Débito/Crédito e Vouchers (VR / Sodexo / Alelo)</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Brasa &amp; Smash Hamburgueria Artesanal. Todos os direitos reservados.</div>
+        <div>Desenvolvido com paixão e bom gosto 🔥</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       Slide-Over Cart Drawer
+       ========================================================================== -->
+  <div class="cart-backdrop" id="cart-backdrop">
+    <div class="cart-drawer">
+      <div class="cart-header">
+        <h3 class="cart-title">
+          <span>🛒</span> Sua Sacola
+        </h3>
+        <button class="cart-close-btn" id="cart-close-btn" aria-label="Fechar Sacola">✕</button>
+      </div>
+
+      <div class="cart-body">
+        <div class="cart-empty" id="cart-empty-message">
+          <div class="cart-empty-icon">🍔</div>
+          <h4>Sua sacola está vazia</h4>
+          <p>Escolha um dos nossos 4 burgers artesanais e adicione aqui!</p>
+        </div>
+
+        <div class="cart-items-list" id="cart-items-container" style="display: none;">
+          <!-- Dynamically populated via hamburgueria.js -->
+        </div>
+      </div>
+
+      <div class="cart-footer">
+        <form id="order-form" class="cart-checkout-form" onsubmit="return false;">
+          <div class="form-group">
+            <label class="form-label" for="customer-name">Seu Nome</label>
+            <input type="text" id="customer-name" class="form-input" placeholder="Ex: Lucas Silva" required />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="customer-address">Endereço de Entrega (ou Retirada)</label>
+            <input type="text" id="customer-address" class="form-input" placeholder="Rua, número, apto e bairro" required />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="payment-method">Forma de Pagamento</label>
+            <select id="payment-method" class="form-select">
+              <option value="Pix (Chave enviada no WhatsApp)">Pix (Aprovação imediata)</option>
+              <option value="Cartão de Crédito / Débito na entrega">Cartão de Crédito / Débito na entrega</option>
+              <option value="Dinheiro (Levar troco)">Dinheiro</option>
+              <option value="Vale-Refeição (VR / Alelo / Sodexo)">Vale-Refeição (VR / Sodexo / Alelo)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="order-notes">Observações do Pedido</label>
+            <input type="text" id="order-notes" class="form-input" placeholder="Ex: Ponto da carne, sem cebola..." />
+          </div>
+        </form>
+
+        <div class="cart-summary-row">
+          <span>Subtotal</span>
+          <span id="cart-subtotal">R$ 0,00</span>
+        </div>
+        <div class="cart-summary-row">
+          <span>Taxa de Entrega</span>
+          <span id="cart-delivery">R$ 6,00</span>
+        </div>
+        <div class="cart-summary-total">
+          <span>Total</span>
+          <span id="cart-total">R$ 0,00</span>
+        </div>
+
+        <button class="cart-checkout-btn" id="cart-checkout-btn" disabled>
+          <span>💬</span> Enviar Pedido via WhatsApp
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="hamburgueria.js"></script>
+</body>
+</html>
